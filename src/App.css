@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -28,6 +26,7 @@
   color: #61dafb;
 }
 
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +34,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App:after{
+  content: '';
+  display: block;
+  position: fixed;
+  width: 300%;
+  height: 100%;
+  top : 50%;
+  left: 50%;
+  border-radius: 100px;
+  transform: translateX(-50%) skewY(-8deg);
+  background-color: #f6c90e;
+  z-index: -1;
+  /* animation-name : example; */
+  animation:example 8s infinite ease-in-out alternate;
+}
+@keyframes example{
+  from{top: 50%}
+  to{top:65%}
 }
