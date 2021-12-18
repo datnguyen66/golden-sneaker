@@ -45,7 +45,8 @@ const useStyle = makeStyles((theme) =>({
     },
     cartInfo:{
         flex : '1',
-        paddingTop : '17px'
+        paddingTop : '17px',
+        height : '124px'
     },
     pictures:{
         transform: 'rotate(-24deg)',
@@ -67,6 +68,7 @@ const useStyle = makeStyles((theme) =>({
     boxquantity:{
         display:'flex',
         alignItems: 'center',
+        bottom : '0',
     },
     iconn:{
         width : '12px',
@@ -162,7 +164,7 @@ function ProductCart() {
                                     <IconButton className={classes.buttonicon} onClick={() => handleIncreaseCart(cartItem)}>    
                                         <AddIcon className={classes.iconn} />
                                     </IconButton>
-                                <Box pl='60px'>
+                                <Box pl='60px' pt='10px'>
                                     <IconButton className={classes.buttonicondlt} onClick={()=> handleRemoveFormCart(cartItem)}>
                                         <DeleteIcon className={classes.deleteicon}/>
                                     </IconButton>
